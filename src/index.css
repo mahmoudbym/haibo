@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Big Header Styles */
+.bigHeader {
+  background-color: #111c4b;
+  width: 100vw;
+  height: 150px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Allows absolute positioning of elements */
+}
+
+.logoDiv {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  color: white;
+  margin-top: 50px;
+  margin-right: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Position the search and cart icons in the top-right corner */
+.elements {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.elements ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.elements li {
+  color: #f2f3f4;
+  font-size: 20px;
+}
+
+/* Navigation Styles */
+.navigate {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.navigate ul {
+  color: #f2f3f4;
+  font-size: 19px;
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.navigate li {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 16px;
+  color: #f2f3f4;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .bigHeader {
+    height: 120px; /* Reduce header height */
+  }
+
+  .logo {
+    font-size: 18px; /* Smaller logo font size */
+    margin-top: 30px; /* Adjust spacing */
+  }
+
+  .elements {
+    top: 10px; /* Adjust position */
+    right: 10px;
+  }
+
+  .elements ul {
+    gap: 10px; /* Reduce gap between icons */
+  }
+
+  .navigate ul {
+    font-size: 16px; /* Smaller text size */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .navigate li {
+    font-size: 14px; /* Smaller text size for mobile */
+  }
+}
+
+/* Tablet Devices (481px to 768px) */
+@media (max-width: 768px) {
+  .bigHeader {
+    height: 130px; /* Slightly reduce header height */
+  }
+
+  .logo {
+    font-size: 22px; /* Slightly smaller logo */
+    margin-top: 40px; /* Adjust spacing */
+  }
+
+  .elements {
+    top: 15px; /* Adjust position */
+    right: 15px;
+  }
+
+  .navigate ul {
+    font-size: 17px; /* Smaller text for tablet */
+    gap: 12px; /* Reduce gap */
+  }
+
+  .navigate li {
+    font-size: 15px; /* Adjust navigation font size */
+  }
+}
+
+/* Desktop Devices (768px and above) */
+@media (min-width: 768px) {
+  .bigHeader {
+    height: 150px; /* Original header size */
+  }
+
+  .logo {
+    font-size: 24px; /* Default logo size */
+    margin-top: 50px; /* Default spacing */
+  }
+
+  .elements {
+    top: 20px; /* Default position */
+    right: 20px;
+  }
+
+  .elements ul {
+    gap: 15px; /* Default gap between icons */
+  }
+
+  .navigate ul {
+    font-size: 19px; /* Default font size for desktop */
+    gap: 15px;
+  }
+
+  .navigate li {
+    font-size: 16px; /* Default font size */
+  }
+}
